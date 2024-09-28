@@ -3,7 +3,9 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern sans-serif font */
     margin: 0; /* Reset default margin */
     padding: 0; /* Reset default padding */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions for theme changes */
+    background-color: #121212; /* Enforced dark background */
+    color: #e0e0e0; /* Light text for contrast */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 
 /* Container to center content and manage layout */
@@ -11,20 +13,23 @@ body {
     max-width: 800px; /* Limit max width for better readability */
     margin: auto; /* Center the container */
     padding: 20px; /* Add spacing around content */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    border-radius: 8px; /* Rounded corners for aesthetics */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Stronger shadow for depth in dark mode */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    background-color: #1e1e1e; /* Dark background for the content area */
+    border: 1px solid #333; /* Subtle border for contrast */
 }
 
 /* Header styling for better layout and alignment */
 header {
     padding-bottom: 20px; /* Spacing below the header */
+    border-bottom: 1px solid #444; /* Divider line for separation */
 }
 
 /* Heading styles for main titles */
 h1 {
     font-size: 2.5rem; /* Responsive size for main title */
     margin: 0; /* Remove default margin */
-    color: #ffffff; /* Light color for contrast in dark mode */
+    color: #ffffff; /* Ensure the main title is fully readable */
 }
 
 /* Heading styles for sub-sections */
@@ -32,21 +37,42 @@ h2 {
     font-size: 1.75rem; /* Larger subheading for emphasis */
     margin-top: 30px; /* Space above subheadings */
     border-bottom: 2px solid #444; /* Underline for separation */
-    padding-bottom: 5px; /* Spacing below the underline */
-    color: #ffffff; /* Light color for contrast */
+    padding-bottom: 10px; /* Extra spacing below subheading */
+    color: #f5f5f5; /* Slightly lighter color for subheading contrast */
+}
+
+/* Paragraph and text styling for better readability */
+p {
+    line-height: 1.6; /* Improved line height for better readability */
+    margin-bottom: 20px; /* Space after paragraphs */
 }
 
 /* Section styling for spacing */
 .info, .interests {
     margin-bottom: 40px; /* Space between sections */
-    padding: 15px; /* Add padding within sections */
-    border: 1px solid #555; /* Light border for section definition */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #2a2a2a; /* Background color for sections */
+    padding: 20px; /* Add padding within sections */
+    border: 1px solid #333; /* Dark border for subtle definition */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #252525; /* Darker background for sections */
 }
 
-/* Dark theme styles */
-.dark {
-    background-color: #181818; /* Dark background to reduce eye strain */
-    color: #e0e0e0; /* Light text for contrast */
+/* List styles */
+ul {
+    list-style-type: disc; /* Disc bullets for list items */
+    padding-left: 20px; /* Indent the list for better formatting */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Link styles for contrast */
+a {
+    color: #1e90ff; /* Bright blue for links */
+    text-decoration: none; /* No underline for cleaner look */
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #ff4500; /* Orange highlight on hover */
 }
