@@ -1,0 +1,59 @@
+/* Base styles for body to ensure consistent appearance across browsers */
+body {
+    font-family: Arial, sans-serif; /* Using a sans-serif font for readability */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for theme changes */
+}
+
+/* Container to center content and manage layout */
+.container {
+    max-width: 800px; /* Limit max width for better readability */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Add spacing around content */
+}
+
+/* Header styling for better layout and alignment */
+header {
+    display: flex; /* Flexbox for responsive layout */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    padding-bottom: 20px; /* Spacing below the header */
+}
+
+/* Heading styles for main titles */
+h1 {
+    font-size: 2.5rem; /* Responsive size for main title */
+    margin: 0; /* Remove default margin */
+}
+
+/* Heading styles for sub-sections */
+h2 {
+    font-size: 1.5rem; /* Appropriate size for subheadings */
+    margin-top: 20px; /* Space above subheadings */
+}
+
+/* Button styling for consistent appearance */
+button {
+    padding: 10px; /* Spacing inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Section styling for spacing */
+.info, .interests {
+    margin-bottom: 30px; /* Space between sections */
+}
+
+/* Light theme styles */
+.light {
+    background-color: #ffffff; /* Light background for clarity */
+    color: #000000; /* Dark text for readability */
+}
+
+/* Dark theme styles for visual comfort in low light */
+.dark {
+    background-color: #121212; /* Dark background to reduce eye strain */
+    color: #ffffff; /* Light text for contrast */
+}
