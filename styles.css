@@ -4,6 +4,8 @@ body {
     font-family: Arial, sans-serif; /* Set font */
     background-color: #1c1c1c; /* Dark background */
     color: #f1f1f1; /* Light text color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
 
 /* Header Styles */
