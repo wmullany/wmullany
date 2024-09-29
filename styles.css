@@ -2,13 +2,13 @@
 body {
     margin: 0; /* Remove default margin */
     font-family: Arial, sans-serif; /* Set font */
-    background-color: #f4f4f4; /* Light gray background */
+    background-color: #696969; /* Light gray background */
     color: #333; /* Dark gray text color */
 }
 
 /* Header Styles */
 header {
-    background: #007BFF; /* Blue background */
+    background: #808080; /* Blue background */
     color: white; /* White text */
     padding: 10px 0; /* Top and bottom padding */
     text-align: center; /* Center text */
@@ -48,6 +48,7 @@ section {
 footer {
     text-align: center; /* Center footer text */
     padding: 10px 0; /* Padding for footer */
-    background: #007BFF; /* Blue background */
+    background: #808080; /* Blue background */
     color: white; /* White text */
+    display: inline; 
 }
