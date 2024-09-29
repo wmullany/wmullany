@@ -1,104 +1,147 @@
-/* Base styles for body to ensure consistent appearance across browsers */
+/* Basic styles for light and dark themes */
+html.light {
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --link-color: #007acc;
+    --border-color: #ccc;
+    --header-background: #fff;
+    --footer-background: #f1f1f1;
+}
+
+html.dark {
+    --background-color: #181818;
+    --text-color: #f5f5f5;
+    --link-color: #80d4ff;
+    --border-color: #444;
+    --header-background: #1e1e1e;
+    --footer-background: #282828;
+}
+
+/* General styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern and clean sans-serif font */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1d1f21; /* Darker, professional background */
-    color: #e0e0e0; /* Light text for readability */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth theme transitions */
-    font-size: 12px; /* Standard base font size for professional readability */
-    line-height: 1.6; /* Increased line spacing for better text readability */
 }
 
-/* Full-width header with subtle shadow */
-header {
-    background-color: #1d1f21; /* Slightly lighter than the body for contrast */
-    color: #ffffff; /* Bright text for contrast */
-    padding: 20px 0; /* Padding on top and bottom */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Softer shadow for depth */
-    width: 100vw;
-    margin-left: calc(-50vw + 50%); /* Ensures the header spans the full width */
+a {
+    color: var(--link-color);
+    text-decoration: none;
 }
 
-/* Header title styling for professionalism */
-h1 {
-    font-size: 2rem; /* Larger font size for importance */
-    font-weight: 700; /* Bold title */
-    margin: 0;
-    text-align: center;
-    letter-spacing: 1.5px; /* Spacing for a premium feel */
-    text-transform: uppercase; /* Title in uppercase for a bold statement */
+a:hover {
+    text-decoration: underline;
 }
 
-/* Container to center content and manage layout */
-.container {
-    max-width: 800px;
-    margin: 40px auto; /* More breathing room between header and content */
-    padding: 40px;
-    border-radius: 12px; /* More rounded corners for modern design */
-    background-color: #1d1f21; /* Dark background for container */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Elevated shadow for depth */
-    color: #e0e0e0;
+/* Navigation styles */
+nav {
+    background-color: var(--header-background);
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
-/* Section styling for clean content separation */
-section {
-    margin-bottom: 40px;
-    padding: 25px;
-    border: 1px solid #1d1f21; /* Soft border for subtle section division */
-    border-radius: 8px;
-    background-color: #1d1f21; /* Matches header background */
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Section title styling */
-h2 {
-    font-size: 1.75rem;
-    color: #1d1f21; /* Clear contrast for section titles */
-    padding-bottom: 10px; /* Spacing under title */
-    margin-bottom: 20px; /* Margin between title and content */
+nav img {
+    width: 32px;
+    height: 32px;
 }
 
-/* Buttons for interactive elements */
-button {
-    background-color: #4a90e2; /* Professional blue for call-to-action */
-    color: #ffffff;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
+nav code {
+    font-family: monospace;
+}
+
+nav details summary {
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
 }
 
-button:hover {
-    background-color: #357ABD; /* Darken on hover for feedback */
-    transform: translateY(-2px); /* Slight elevation effect on hover */
+nav .drop a {
+    display: block;
+    padding: 0.5rem 0;
 }
 
-/* Footer (optional, if needed) */
-footer {
-    margin-top: 40px;
+/* Header styles */
+header {
+    background-color: var(--header-background);
+    padding: 2rem 1rem;
+    border-bottom: 1px solid var(--border-color);
     text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-    color: #888888; /* Softer text for footer */
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .container {
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
 
-    h1 {
-        font-size: 1.75rem; /* Adjust title size */
-    }
+/* Main content */
+main {
+    padding: 2rem 1rem;
+}
 
-    h2 {
-        font-size: 1.5rem; /* Adjust section title size */
-    }
+main h2, main h3 {
+    color: var(--text-color);
+}
 
-    button {
-        padding: 10px 20px; /* Adjust button size */
-    }
+main .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+article {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+}
+
+.article-content time {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.article-content h3 {
+    font-size: 1.5rem;
+}
+
+.article-content p {
+    font-size: 1rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--footer-background);
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer small {
+    color: #999;
 }
