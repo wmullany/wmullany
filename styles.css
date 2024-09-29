@@ -12,7 +12,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Aligns content starting from the top */
+    justify-content: space-between; /* Keeps the header at the top and footer at the bottom */
     height: 100vh; /* Ensures body fills the full viewport height */
 }
 
@@ -32,7 +32,7 @@ h1 {
 .container {
     width: 70%; /* Fill 70% of the screen width */
     margin: 0 auto; /* Center the container horizontally */
-    height: 100%; /* Make sure container fills full height */
+    flex-grow: 1; /* Allows the content to grow to fill the available space */
     display: flex;
     align-items: center; /* Vertically align the text */
 }
@@ -43,49 +43,22 @@ h1 {
     line-height: 1.6; /* Increase line height for readability */
 }
 
-/* Styling for the headings */
-h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-/* Paragraph styling */
-p {
-    font-size: 1.5rem;
-    line-height: 1.6;
-}
-
-/* Footer link styles */
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-}
-
-footer ul li {
-    display: inline;
-    margin: 0 10px;
+/* Footer styles to show links in a neat row */
+footer {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    padding: 20px 0; /* Padding around the links */
 }
 
 footer a {
-    color: #66ccff;
-    text-decoration: none;
-    font-size: 1.2rem;
+    color: #f1f1f1; /* Light text color for the links */
+    margin: 0 10px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
 footer a:hover {
-    text-decoration: underline;
-}
-
-/* Small text in footer */
-footer small {
-    display: block;
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #cccccc;
+    border-bottom: 2px solid #f1f1f1; /* Underline effect on hover */
 }
