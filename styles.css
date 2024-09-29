@@ -2,22 +2,28 @@
 body {
     margin: 0; /* Remove default margin */
     font-family: Arial, sans-serif; /* Set font */
-    background-color: #696969; /* Light gray background */
-    color: #333; /* Dark gray text color */
+    background-color: #1c1c1c; /* Dark background */
+    color: #f1f1f1; /* Light text color */
 }
 
 /* Header Styles */
 header {
-    background: #808080; /* Blue background */
+    background: #333; /* Dark gray background */
     color: white; /* White text */
     padding: 10px 0; /* Top and bottom padding */
     text-align: center; /* Center text */
 }
 
 /* Navigation Styles */
+nav {
+    text-align: center; /* Center the navigation */
+    margin: 20px 0; /* Margin above and below navigation */
+}
+
 nav ul {
     list-style: none; /* Remove bullet points */
     padding: 0; /* Remove padding */
+    display: inline; /* Display the list inline */
 }
 
 nav ul li {
@@ -27,7 +33,11 @@ nav ul li {
 
 nav a {
     text-decoration: none; /* Remove underline from links */
-    color: #007BFF; /* Blue color for links */
+    color: #66ccff; /* Light blue color for links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Main Content Styles */
@@ -39,16 +49,15 @@ main {
 section {
     margin-bottom: 20px; /* Space between sections */
     padding: 20px; /* Padding inside sections */
-    background: white; /* White background */
+    background: #2a2a2a; /* Darker background for sections */
     border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
 
 /* Footer Styles */
 footer {
     text-align: center; /* Center footer text */
     padding: 10px 0; /* Padding for footer */
-    background: #808080; /* Blue background */
+    background: #333; /* Dark gray background */
     color: white; /* White text */
-    display: inline; 
 }
