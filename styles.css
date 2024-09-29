@@ -20,6 +20,7 @@ header {
 nav {
     text-align: center; /* Center the navigation */
     margin: 20px 20px; /* Margin above and below navigation */
+    padding: 20px; /* Remove padding */
 }
 
 nav ul {
