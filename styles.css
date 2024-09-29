@@ -1,64 +1,74 @@
-/* Dark theme for the background and light text */
-html, body {
-    background-color: #1c1c1c; /* Dark background */
-    color: #f1f1f1; /* Light text */
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Body takes the full height of the viewport */
+/* Dark theme setup */
+body.dark {
+    background-color: #1c1c1c;
+    color: #f1f1f1;
     font-family: Arial, sans-serif;
-}
-
-/* Ensure the body height covers the full page and content is displayed in a column */
-body {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Keeps the header at the top and footer at the bottom */
-    height: 100vh; /* Ensures body fills the full viewport height */
+    justify-content: center;
+    align-items: flex-start; /* Aligns content to the top without gaps */
+    height: 100vh;
+    margin: 0;
 }
 
-/* Title styling */
-header {
-    text-align: center; /* Center the title at the top */
-    padding: 20px 0; /* Add some padding around the title */
+/* Container for the centered content */
+.container {
+    text-align: left; /* Left-align the text content */
+    max-width: 600px; /* Set a maximum width for the container */
+    width: 70%; /* Fill 70% of the middle of the screen horizontally */
+    padding: 2rem; /* Padding on the left and right only */
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto; /* Center the container */
 }
 
+/* Styling for the headings */
 h1 {
     font-size: 3rem;
-    margin: 0;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Styling for the footer links */
+footer {
+    margin-top: 20px; /* Add a bit of space above the footer */
+}
+
+footer ul {
+    list-style: none;
     padding: 0;
 }
 
-/* Content container filling 70% of the width, full height */
-.container {
-    width: 70%; /* Fill 70% of the screen width */
-    margin: 0 auto; /* Center the container horizontally */
-    flex-grow: 1; /* Allows the content to grow to fill the available space */
-    display: flex;
-    align-items: center; /* Vertically align the text */
-}
-
-/* Inside container text will be left aligned */
-.container section {
-    text-align: left; /* Left-align text inside the container */
-    line-height: 1.6; /* Increase line height for readability */
-}
-
-/* Footer styles to show links in a neat row */
-footer {
-    display: flex;
-    justify-content: center; /* Center the links horizontally */
-    padding: 20px 0; /* Padding around the links */
+footer ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
 footer a {
-    color: #f1f1f1; /* Light text color for the links */
-    margin: 0 10px; /* Space between links */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s ease;
+    color: #66ccff;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 footer a:hover {
-    border-bottom: 2px solid #f1f1f1; /* Underline effect on hover */
+    text-decoration: underline;
+}
+
+/* Small text styling */
+footer small {
+    display: block;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #cccccc;
 }
