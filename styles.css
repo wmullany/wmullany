@@ -1,24 +1,46 @@
-/* Force dark theme */
+/* Dark theme for the background and light text */
 html, body {
-    background-color: #1c1c1c;
-    color: #f1f1f1;
+    background-color: #1c1c1c; /* Dark background */
+    color: #f1f1f1; /* Light text */
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100%; /* Body takes the full height of the viewport */
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: left; /* Centers content horizontally */
 }
 
-/* Center container and limit width to middle half of the page */
+/* Ensure the body height covers the full page and content is displayed in a column */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content starting from the top */
+    height: 100vh; /* Ensures body fills the full viewport height */
+}
+
+/* Title styling */
+header {
+    text-align: center; /* Center the title at the top */
+    padding: 20px 0; /* Add some padding around the title */
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Content container filling 70% of the width, full height */
 .container {
-    width: 70%; /* Set container width to 50% */
-    text-align: center;
-    border: 1px solid #333;
-    border-radius: 10px;
-    background-color: #2a2a2a;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 70%; /* Fill 70% of the screen width */
+    margin: 0 auto; /* Center the container horizontally */
+    height: 100%; /* Make sure container fills full height */
+    display: flex;
+    align-items: center; /* Vertically align the text */
+}
+
+/* Inside container text will be left aligned */
+.container section {
+    text-align: left; /* Left-align text inside the container */
+    line-height: 1.6; /* Increase line height for readability */
 }
 
 /* Styling for the headings */
