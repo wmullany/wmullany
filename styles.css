@@ -59,7 +59,7 @@ section {
 /* Footer Styles */
 footer {
     text-align: center; /* Center footer text */
-    padding: 10px 0; /* Padding for footer */
+    padding: 10px 20px; /* Padding for footer */
     background: #333; /* Dark gray background */
     color: white; /* White text */
 }
