@@ -2,7 +2,7 @@
 body {
     margin: 0 160px; /* Remove default margin */
     font-family: "Arial", Helvetica, sans-serif; /* Set font */
-    background-color: #6b6b6b; /* Dark background */
+    background-color: #777777; /* Dark background */
     color: #f1f1f1; /* Light text color */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
