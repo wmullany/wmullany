@@ -2,7 +2,7 @@
 body {
     margin: 0 160px; /* Remove default margin */
     font-family: Arial, sans-serif; /* Set font */
-    background-color: #1c1c1c; /* Dark background */
+    background-color: #6b6b6b; /* Dark background */
     color: #f1f1f1; /* Light text color */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
@@ -10,7 +10,7 @@ body {
 
 /* Header Styles */
 header {
-    background: #333; /* Dark gray background */
+    background: #c89a63; /* Dark gray background */
     color: white; /* White text */
     padding: 10px 0; /* Top and bottom padding */
     text-align: center; /* Center text */
