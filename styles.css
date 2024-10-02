@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     margin: 0 160px; /* Remove default margin */
-    font-family: "Lucida Console", Courier, monospace; /* Set font */
+    font-family: "Arial", Helvetica, sans-serif; /* Set font */
     background-color: #6b6b6b; /* Dark background */
     color: #f1f1f1; /* Light text color */
     border-radius: 5px; /* Rounded corners */
