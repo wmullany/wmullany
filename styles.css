@@ -54,7 +54,7 @@ main {
 section {
     margin-bottom: 20px; /* Space between sections */
     padding: 5px; /* Padding inside sections */
-    background: #2a2a2a; /* Darker background for sections */
+    background: #777777; /* Darker background for sections */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
@@ -63,6 +63,6 @@ section {
 footer {
     text-align: center; /* Center footer text */
     padding: 5px 5px; /* Padding for footer */
-    background: #333; /* Dark gray background */
+    background: #777777; /* Dark gray background */
     color: white; /* White text */
 }
