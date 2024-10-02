@@ -13,6 +13,7 @@ header {
     background: #957146; /* Dark gray background */
     color: white; /* White text */
     padding: 10px 20px; /* Top and bottom padding */
+    margin: 70px 0px; /* Margin above and below navigation */
     text-align: center; /* Center text */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
