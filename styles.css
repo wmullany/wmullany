@@ -3,6 +3,7 @@
     --rounded-large: 8px;
     --rounded-normal: 4px;
     --text-size-large: 24px;
+    --link-color: #79b7ff; /* Lighter blue color */
 }
 
 body {
@@ -72,7 +73,7 @@ body {
 
 .layout-overall {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 40px;
     background-color: #fff;
 }
