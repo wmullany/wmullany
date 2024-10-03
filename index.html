@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Character encoding -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
-    <title>Will Mullany</title> <!-- Title of the webpage -->
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
 
-    <header class="head-site">
-        <div class="container">
-            <h1 class="head-title">Will Mullany</h1>
-            <p class="link-underlined">Web Developer | Designer</p>
-        </div>
-    </header>
+        <!-- Header Section -->
+        <header class="head-site">
+            <h1 class="head-title">Your Name</h1>
+            <p class="link-underlined">Professional Developer | Engineer | Designer</p>
+            <!-- Photo placeholder -->
+            <div class="profile-photo" style="text-align: center; margin-top: 30px;">
+                <img src="your-photo.jpg" alt="Your Photo" style="border-radius: 50%; width: 150px; height: 150px;">
+            </div>
+        </header>
 
-    <section class="gallery-site">
-        <ul class="gallery-site--two-cols">
-            <li><img src="project1.jpg" class="gallery-site__img" alt="Project 1"></li>
-            <li><img src="project2.jpg" class="gallery-site__img" alt="Project 2"></li>
-        </ul>
-    </section>
+        <!-- About Me Section -->
+        <section class="grid-typography" style="margin-top: 50px;">
+            <!-- GitHub Bio -->
+            <div>
+                <h2>About Me</h2>
+                <p>
+                    Hello, I’m a passionate developer with expertise in software engineering, data science, and design.
+                    I love working on challenging projects and learning new technologies. Check out my projects below!
+                </p>
+                <p><strong>GitHub Bio:</strong> I specialize in building efficient, scalable web applications and creating open-source tools for developers.</p>
+                <div class="contact-links">
+                    <a href="mailto:youremail@example.com">Contact Me</a>
+                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                </div>
+            </div>
 
-    <section class="grid-typography">
-        <div class="grid-typography__item">
+            <!-- Contact Section with More Information -->
             <figure class="grid-typography__figure">
-                <img src="about.jpg" class="grid-typography__img" alt="About Me">
+                <img src="your-portfolio-image.jpg" alt="Portfolio Snapshot" class="grid-typography__img">
             </figure>
-        </div>
-        <div class="grid-typography__item">
-            <h2>About Me</h2>
-            <p>I am an Engineering and Computer Science student at the University of Queensland, specialising in Mechatronics Engineering.</p>
-            <p>Currently working as an undergraduate engineer at BUMA Australia, I enjoy working in a high performing team on large projects</p>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <div class="contact-links">
-          <a href="mullanywill@gmail.com" target="_blank">Email</a>
-          <a href="https://github.com/wmullany" target="_blank">GitHub</a>
-      </div>
-        <p>&copy; 2024 Will Mullany. All rights reserved.</p>
-    </footer>
+        <!-- Projects Section -->
+        <section class="layout-overall">
+            <h2 style="text-align: center; grid-column: 1 / span 4; margin-bottom: 40px;">Projects</h2>
+            <div class="layout-overall__type">
+                <h3>Project 1</h3>
+                <p>Brief description of Project 1. Built using React, Node.js, and MongoDB.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+            </div>
+            <div class="layout-overall__type">
+                <h3>Project 2</h3>
+                <p>Brief description of Project 2. Developed with Python and Flask.</p>
+                <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+            </div>
+            <div class="layout-overall__type">
+                <h3>Project 3</h3>
+                <p>Brief description of Project 3. Created using HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        </footer>
+
+    </div>
 </body>
 </html>
