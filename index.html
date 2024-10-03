@@ -7,30 +7,40 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
 </head>
 <body>
-    <header>
-        <h1>Will Mullany</h1> <!-- Main heading -->
+
+    <header class="head-site">
+        <div class="container">
+            <h1 class="head-title">Will Mullany</h1>
+            <p class="link-underlined">Web Developer | Designer</p>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li> <!-- Navigation links -->
-            <li><a href="#contact">Contact</a></li>
+
+    <section class="gallery-site">
+        <ul class="gallery-site--two-cols">
+            <li><img src="project1.jpg" class="gallery-site__img" alt="Project 1"></li>
+            <li><img src="project2.jpg" class="gallery-site__img" alt="Project 2"></li>
         </ul>
-    </nav>
-    <main>
-        <section id="about">
+    </section>
+
+    <section class="grid-typography">
+        <div class="grid-typography__item">
+            <figure class="grid-typography__figure">
+                <img src="about.jpg" class="grid-typography__img" alt="About Me">
+            </figure>
+        </div>
+        <div class="grid-typography__item">
             <h2>About Me</h2>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>How to reach me:</p>
-        </section>
-    </main>
-    <nav>
-        <ul>
-            <li><a href="https://github.com/wmullany" class="btn">GitHub Profile</a></li>
-            <li><a href="mailto:mullanywill@gmail.com" class="btn">Email Me</a></li>
-        </ul>
-         <p>&copy; Will Mullany. All rights reserved.</p> <!-- Footer content -->
-    </nav>
+            <p>I am an Engineering and Computer Science student at the University of Queensland, specialising in Mechatronics Engineering.</p>
+            <p>Currently working as an undergraduate engineer at BUMA Australia, I enjoy working in a high performing team on large projects</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-links">
+          <a href="mullanywill@gmail.com" target="_blank">Email</a>
+          <a href="https://github.com/wmullany" target="_blank">GitHub</a>
+      </div>
+        <p>&copy; 2024 Will Mullany. All rights reserved.</p>
+    </footer>
 </body>
 </html>
