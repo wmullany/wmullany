@@ -3,7 +3,7 @@
     --rounded-large: 8px;
     --rounded-normal: 4px;
     --text-size-large: 24px;
-    --link-color: #76b5fc; /* Lighter blue color */
+    --link-color: #696969; /* Lighter grey color */
 }
 
 body {
@@ -29,7 +29,7 @@ a:hover {
 }
 
 .head-site {
-    background-color: #222;
+    background-color: #323232;
     color: #fff;
     text-align: center;
     padding: 50px 0;
