@@ -1,6 +1,6 @@
 :root {
     --gutter: 20px;
-    --rounded-large: 8px;
+    --rounded-large: 0px;
     --rounded-normal: 4px;
     --text-size-large: 24px;
     --link-color: #696969; /* Lighter grey color */
@@ -77,7 +77,7 @@ a:hover {
 
 .grid-typography__img {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     border-radius: var(--rounded-large);
 }
 
