@@ -43,6 +43,8 @@ a:hover {
 .link-underlined {
     font-size: 20px;
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .gallery-site--two-cols {
