@@ -91,6 +91,7 @@ a:hover {
 .layout-overall__type {
     text-align: center;
     border-left: 1px dashed #ccc;
+    border-right: 1px dashed #ccc;
     padding: 20px;
 }
 
